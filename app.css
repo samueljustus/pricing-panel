@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'open sans', sans-serif;
+}
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* width: 100%; */
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em 2em;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: upperCase;
+}
+
+.pricing-img {
+    margin-bottom: 1.2em;
+    max-width: 100%;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 3em 0 1.5em;
+    color: #016ff9;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-features-item {
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: .8em;
+    line-height: 1.5;
+    padding: 1em 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    display: block;
+    color:#016ff9;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.pricing-button {
+    text-decoration: none;
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: 1.2em 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.is-featured {
+    background-color: #48aaff;
+    color: #fff;
+}
+.is-featured:hover, .is-featured:focus {
+    background-color: #269aff;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 1.3em 2em;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
